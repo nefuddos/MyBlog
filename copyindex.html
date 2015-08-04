@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="dgf">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="jQuery/jquery-1.9.1.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="jQuery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/jsIndex.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8" async defer></script>
+	<title>MY♥BLOG!</title>
+</head>
+<body>
+<div class="g-wrap">
+	<h2 class="title">有你,有我,有她|<span>Be the change you want to be in the world!</span></h2>
+	<!--
+	<div class="login">
+		<h2><a >注册</a>/<a href="login.html">登录</a></h2>
+	</div>
+	-->
+	<div class="m-demo">
+		<div class="nav-3d"> 
+		    <a href="index.html"><span data-en="Main">我的主页</span></a>
+		    <a onclick="pageload('Web')"><span data-en="Web">Web前端</span></a>
+		    <a onclick="pageload('OS')" class="here"><span data-en="OS">操作系统</span></a>
+		    <a onclick="pageload('Reading')"><span data-en="Reading">读书</span></a>
+		    <a onclick="pageload('About')" ><span data-en="About">关于我们</span></a>
+		    <input type="text" class="s-text" id="s-text" name="search" value="">&nbsp;
+		    <input type="button" class="s-btn" id="s-btn" value="搜 索">
+		</div>
+	</div>
+</div>
+<div id="rjg">hahahhahh</div>
+<div class="g-wrap cl">
+		<div class="accordion m-demo">
+			<dl>
+				<dt onclick = "loadTitle()"><span>1 </span>最新文章</dt>
+				<dd>
+				<ul>
+					<li>1:<a>Hello World</a></li>
+					<li>2:<a>牛乳大饼</a></li>
+				</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt onclick = "loadCategory()"><span>2 </span>分类列表</dt>
+				<dd>
+				<ul>
+					<li>1:<a>Web前端</a></li>
+					<li>2:<a>阅读</a></li>
+					<li>2:<a>文化</a></li>
+				</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt onclick = "loadComment()"><span>3 </span>最新评论</dt>
+				<dd>
+				</dd>
+			</dl>
+			<dl>
+				<dt><span>4 </span>我的收藏</dt>
+				<dd>
+				</dd>
+			</dl>
+			<dl>
+				<dt onclick = "loadTags()"><span>5 </span>标签云</dt>
+				<dd>
+				</dd>
+			</dl>
+			<dl>
+				<dt><span>6 </span>日历</dt>
+				<dd>
+				</dd>
+			</dl>
+			<dl>
+				<dt><span>7 </span>友情链接</dt>
+				<dd>
+				   <li>*<a href="">新浪主页</a></li>
+				</dd>
+			</dl>
+		</div>
+        <!--</div>>-->
+	<div class="show c2 c1"><!--内容展示区 show开始-->
+	<ul>
+		<li class="content m-demo">
+		    <div class="biaoti"><!--标题-->
+		 		<h2 class="m-title">2015/4/6</h2>
+		    	<a class="a-title"><i>Hello World!</i></a>
+		 	</div>
+			<div class="article"><!--正文-->
+				<article>
+		   	    <p>&nbsp;&nbsp;这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!</p>
+		   	    <p>&nbsp;这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!</p>
+		   	    <p>&nbsp;这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!
+		   	    这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!这是我的第一篇博客!</p>
+		    	</article>
+		    	<hr>
+		    	<h2>评论：</h2>
+		    	<textarea style="none"></textarea>
+		    	<input type="button" class="s-btn" value="提交"></input>
+		    	<hr><br>
+		    	<img src="image/1.png" alt="">&nbsp;<h7>:楼主写的真好！</h7>
+			</div>
+			<div class="more"><!--扩展全文-->
+		   		<span>author:<i>dgf</i>&nbsp;&nbsp;</span>
+		   		<span>标签:<i>读书,杂记</i></span>
+		   		<a><span class="read">Read More>></span></a>
+			</div>
+		</li>
+		<li class="content m-demo">
+	    <!--内容展示区-->
+			<div class="biaoti"><!--标题-->
+			 	<h2 class="m-title">2015/4/6</h2>
+			    <i class="a-title"><a>牛乳大饼</a></i>
+			</div>
+		    <div class="article"><!--正文-->
+			 	<article>
+		   	    这是我的第一篇博客!
+		    	</article>
+			</div>
+			<div class="more"><!--扩展全文-->
+		   		<span>author:<i>dgf</i>&nbsp;&nbsp;</span>
+		   		<span>标签:<i>读书,杂记</i></span>
+		   		<a><span class="read">Read More>></span></a>
+			</div>
+		</li>
+		<li class="content m-demo">
+		<!--内容展示区-->
+			<div class="biaoti"><!--标题-->
+			 	<h2 class="m-title">2015/4/6</h2>
+			    <i class="a-title"><a>牛乳大饼</a></i>
+			</div>
+		    <div class="article"><!--正文-->
+			 	<article>
+		   	    这是我的第一篇博客!
+		    	</article>
+			</div>
+			<div class="more"><!--扩展全文-->
+		   		<span>author:<i>dgf</i>&nbsp;&nbsp;</span>
+		   		<span>标签:<i>读书,杂记</i></span>
+		   		<a><span class="read">Read More>></span></a>
+			</div>
+		</li>
+		<li class="content m-demo">
+		<!--内容展示区-->
+			<div class="biaoti"><!--标题-->
+			 	<h2 class="m-title">2015/4/6</h2>
+			    <a class="a-title"><i>牛乳大饼</i></a>
+			</div>
+		    <div class="article"><!--正文-->
+			 	<article>
+		   	    这是我的第一篇博客!
+		    	</article>
+			</div>
+			<div class="more"><!--扩展全文-->
+		   		<span>author:<i>dgf</i>&nbsp;&nbsp;</span>
+		   		<span>标签:<i>读书,杂记</i></span>
+		   		<a><span class="read">Read More>></span></a>
+			</div>
+		</li>
+ 	</div><!--内容展示区 show结束-->
+</div>
+
+<div class="g-wrap">
+	<div class="m-demo">
+		<div class="foot">
+			<h2>powered by dgf!</h2>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>

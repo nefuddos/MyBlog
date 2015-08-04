@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="utf-8" />
+        <title>后台文章编辑界面</title>
+        <link rel="stylesheet" href="css/style.css" />
+        <link rel="stylesheet" href="css/editormd.css" />
+        <link rel="shortcut icon" href="me.jpeg" type="image/x-icon" />
+		<script src="js/jquery.min.js" type="text/javascript"></script>
+		<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+		<script src="js/form.js" type="text/javascript"></script>
+	</head>
+    <body>
+        <div id="layout">
+            <header>
+				标题:<input type="text" id = "title" value="three code"/>
+				作者:<input type="text" id = "writer" value="rjg"/>
+				category:<input type="text" id="category" value="reading"/>
+				tags:<input type="text" id = "tags" value="code"/>
+            </header>
+            <div id="test-editormd">
+                <textarea style="display:none;" id="content">[TOC]
+
+```php
+	echo "this is the test";
+```
+
+```python
+	def abs(x)
+		if(x>=0):
+			return x
+		else:
+			return -x
+```
+
+```c
+	#include<stdio.h>
+	int main()
+	{
+		printf("hello world\n");
+		return 0;
+	}
+```
+</textarea>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/editormd.js"></script>
+        <script type="text/javascript">
+			var testEditor;
+
+            $(function() {
+                testEditor = editormd("test-editormd", {
+                    width   : "90%",
+                    height  : 640,
+                    path    : "lib/"
+                });
+                
+                /*
+                // or
+                testEditor = editormd({
+                    id      : "test-editormd",
+                    width   : "90%",
+                    height  : 640,
+                    path    : "../lib/"
+                });
+                */
+            });
+        </script>
+		<input type="BUTTON" value="提交" id="submit" />
+		<input type="BUTTON" value="取消" id="cancle" />
+		<div id = "showerror"></div>
+    </body>
+</html>

@@ -1,0 +1,75 @@
+	*{
+		font-family: "楷体";
+	}
+	html{
+	background-color: #0cf;
+	background-image: radial-gradient(rgba(0,0,0,0) 0%,rgba(0,0,0,.3) 100%);
+}
+.g-wrap{
+	margin:10px auto;
+	padding:10px 20px;
+	width:400px;
+	background:#fff;
+	box-shadow:0 0 8px rgba(0,0,0,.4);
+}
+.m-demo{
+	margin:20px 0 10px 0;
+	padding:5px;
+	background:#f8f8f8;
+}
+.title{
+	width:200px;
+	height:50px;
+	color:white;
+	text-align: center;
+	margin:0 auto;
+	font-family: "微软雅黑";
+	font-weight: bold;
+	line-height: 36px;
+}
+.title h2{
+	font-family: "微软雅黑";
+	font-weight: bold;
+	font-size: 35px;
+	-webkit-box-reflect:below 1px -webkit-linear-gradient(transparent,transparent 20%,rgba(255,255,255,.8));
+}
+	.box{
+			width: 300px;
+			height:230px;
+			border: 5px solid;
+			border-radius: 5px;
+			border-color: #ddd;
+			margin:0 auto;
+		}
+		.top{
+			width:300px;
+			height: 30px;
+			line-height: 30px;
+			font-weight: bold;
+			font-size: 16px;
+			background-color: #eee;		}
+		.bot{
+			width: 250px;
+			height: 110px;
+			margin:0 auto;
+			padding:10px;
+			line-height: 26px;
+			text-align: center;
+		}
+		.btom{
+			width:230px;
+			height: 30px;
+			margin-left:60px;
+
+		}
+.btn{
+	width: 70px;
+	height: 40px;
+	margin:0 auto;
+}
+.c{
+	width: 150px;
+	height: 30px;
+	font-size: 16px;
+	margin:10px auto; 
+}

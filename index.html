@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="author" content="dgf">
+<meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0" name="viewport">
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="jQuery/jquery-1.9.1.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="jQuery/jquery-1.9.1.min.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/jsIndex.js" type="text/javascript" charset="utf-8" async defer></script>
+<script src="js/common.js" type="text/javascript" charset="utf-8" async defer></script>
+        <script src="js/marked.min.js"></script>
+        <script src="js/prettify.min.js"></script>
+        
+        <script src="js/raphael.min.js"></script>
+        <script src="js/underscore.min.js"></script>
+        <script src="js/sequence-diagram.min.js"></script>
+        <script src="js/flowchart.min.js"></script>
+        <script src="js/jquery.flowchart.min.js"></script>
+
+        <script src="js/editormd.js"></script>  
+	<title>MY♥BLOG!</title>
+</head>
+<body>
+<div class="g-wrap">
+	<h2 class="title">有你,有我,有她|<span>Be the change you want to be in the world!</span></h2>
+	<!--
+	<div class="login">
+		<h2><a >注册</a>/<a href="login.html">登录</a></h2>
+	</div>
+	-->
+	<div class="m-demo">
+		<div class="nav-3d"> 
+		    <a href="index.html"><span data-en="Main">我的主页</span></a>
+		    <a onclick="pageload('Web')"><span data-en="Web">Web前端</span></a>
+		    <a onclick="pageload('OS')" class="here"><span data-en="OS">操作系统</span></a>
+		    <a onclick="pageload('Reading')"><span data-en="Reading">读书</span></a>
+		    <a onclick="pageload('About')" ><span data-en="About">关于我们</span></a>
+		    <input type="text" class="s-text" id="s-text" name="search" value="">&nbsp;
+		    <input type="button" class="s-btn" id="s-btn" value="搜 索">
+		</div>
+	</div>
+</div>
+
+<div class="g-wrap cl">
+		<div class="accordion m-demo">
+			<dl>
+				<dt onclick = "loadTitle()"><span>1 </span>最新文章</dt>
+				<dd id = "Title">
+				<ul>
+					<li>1:<a>Hello World</a></li>
+					<li>2:<a>牛乳大饼</a></li>
+				</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt onclick = "loadCategory()"><span>2 </span>分类列表</dt>
+				<dd id = "category">
+				<ul>
+					<li>1:<a>Web前端</a></li>
+					<li>2:<a>阅读</a></li>
+					<li>2:<a>文化</a></li>
+				</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt onclick = "loadComment()"><span>3 </span>最新评论</dt>
+				<dd id = "comment">
+				</dd>
+			</dl>
+			<dl>
+				<dt><span>4 </span>我的收藏</dt>
+				<dd>
+				</dd>
+			</dl>
+			<dl>
+				<dt onclick = "loadTags()"><span>5 </span>标签云</dt>
+				<dd id = "tags">
+				</dd>
+			</dl>
+			<dl>
+				<dt><span>6 </span>日历</dt>
+				<dd>
+				</dd>
+			</dl>
+			<dl>
+				<dt><span>7 </span>友情链接</dt>
+				<dd>
+				   <li>*<a href="">新浪主页</a></li>
+				</dd>
+			</dl>
+		</div>
+        <!--</div>>-->
+	<div class="show c2 c1" id="rjg"><!--内容展示区 show开始-->
+ 	</div><!--内容展示区 show结束-->
+</div>
+
+<div class="g-wrap">
+	<div class="m-demo">
+		<div class="foot">
+			<h2>powered by dgf!</h2>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
