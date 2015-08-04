@@ -25,26 +25,8 @@ if($conn == false)
 		    	<a class="a-title"><i>$row[0]</i></a>
 		 	</div>
 				<article>
-					<div id="md-view">
-					<textarea id = "append-test" style="display:none;">$content</textarea>
-					</div>
+					$content
 				</article>
-        <script type="text/javascript">//显示.md文件的内容
-			var  testEditormdView2;
-
-            $(function() {
-
-                    
-                testEditormdView2 = editormd.markdownToHTML("md-view", {
-                    htmlDecode      : "style,script,iframe",  // you can filter tags decode
-                    emoji           : true,
-                    taskList        : true,
-                    tex             : true,              // 默认不解析
-                    flowChart       : true,         // 默认不解析
-                    sequenceDiagram : true,  // 默认不解析
-                });
-            });
-        </script>
 		    	<hr>
 		    	<h2>评论：</h2>
 		    	<textarea style="none"></textarea>

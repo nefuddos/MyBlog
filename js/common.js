@@ -128,13 +128,11 @@ function wrGetTags()
 }
 
 
-function getOneArticle(){
-				var uid;
-				uid = $("#uid").val();
+function getOneArticle(filename){
 		    $.ajax({
 				type:"POST",
 				url:"backstage/loadArticle.php",
-				data:"uid="+uid,
+				data:"uid="+filename,
 				async:true, //异步请求
 				dataType:"html",
 				success:succLoadArticle,

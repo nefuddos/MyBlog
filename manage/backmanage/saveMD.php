@@ -3,7 +3,7 @@
 	header("Content-type: text/html; charset=utf-8");
 	include_once('../../backstage/commonFunc/getRandomChar.php');
 	$randomStr = getRandomChar1(20);
-	$content = $_POST['cont'];
+	$content = htmlspecialchars($_POST['cont']);
 	$handle = fopen("../resource/essay/v_$randomStr.md","wb");
 	if($handle == true)
 	{
@@ -14,7 +14,7 @@
 		}
 		else
 		{
-			echo $_SERVER['HTTP_HOST'].'/manage/resource/essay/v_'.$randomStr.'.md';
+			echo '/manage/resource/essay/v_'.$randomStr.'.md';
 		}
 	}
 	fclose($handle);

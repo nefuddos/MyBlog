@@ -29,26 +29,8 @@ if($conn == false)
 		 	</div>
 			<div class="article">
 				<article>
-					<div id="md-view">
-					<textarea id = "append-test" style="display:none;">$content</textarea>
-					</div>
+					$content
 				</article>
-        <script type="text/javascript">//显示.md文件的内容
-			var  testEditormdView2;
-
-            $(function() {
-
-                    
-                testEditormdView2 = editormd.markdownToHTML("md-view", {
-                    htmlDecode      : "style,script,iframe",  // you can filter tags decode
-                    emoji           : true,
-                    taskList        : true,
-                    tex             : true,              // 默认不解析
-                    flowChart       : true,         // 默认不解析
-                    sequenceDiagram : true,  // 默认不解析
-                });
-            });
-        </script>
 		    	<hr>
 		    	<h2>评论：</h2>
 		    	<textarea style="none"></textarea>
@@ -57,9 +39,9 @@ if($conn == false)
 		    	<img src="image/1.png" alt="">&nbsp;<h7>:楼主写的真好！</h7>
 			</div>
 			<div class="more">
-		   		<span>author:<i>dgf</i>&nbsp;&nbsp;</span>
+		   		<span>author:<i>$row[3]</i>&nbsp;&nbsp;</span>
 		   		<span>标签:<i>$row[1]</i></span>
-		   		<a><span class="read" onclick = "getOneArticle()">Read More>></span></a>
+		   		<a><span class="read" onclick = "getOneArticle('$filename')">Read More>></span></a>
 			</div>
 		</li>
 END;
